@@ -9,7 +9,7 @@ Ansible playbook to setup Print Service
 ansible-galaxy install -r requirements.yml
 
 ansible-playbook playbooks/setup/setup.yml -K --ask-pass
-ansible-playbook playbooks/print-service/print-service.yml -K --ask-pass
+ansible-playbook playbooks/print-service/print-service.yml -K
 
 sudo tailscale up
 ```
