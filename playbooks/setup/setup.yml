@@ -1,0 +1,6 @@
+---
+- hosts: current
+  name: Setup
+  roles:
+    - ssh
+  become: yes

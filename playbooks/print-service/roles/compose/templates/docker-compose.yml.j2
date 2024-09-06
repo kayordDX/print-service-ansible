@@ -1,0 +1,12 @@
+services:
+  print-service:
+    image: ghcr.io/kayorddx/print-service:latest
+    environment:
+      ConnectionStrings:Redis: pos.kayord.com,password=${REDIS_PASSWORD},ssl=False,abortConnect=False
+      Printer:OutletId: {{outletId}}
+      Printer:PrinterId: {{printerId}}
+      Printer:Name: {{printerName}}
+    volumes:
+      - /dev/usb/:/dev/usb/
+    restart: unless-stopped
+    privileged: true

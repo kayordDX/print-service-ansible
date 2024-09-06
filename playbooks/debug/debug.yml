@@ -1,0 +1,8 @@
+---
+- hosts: ruimsigPrint1
+  name: Debug
+  # vars_prompt:
+  #   - name: bla
+  #     prompt: Enter bla
+  roles:
+    - role: debug

@@ -1,0 +1,10 @@
+---
+- name: Create Compose File
+  ansible.builtin.template:
+    src: templates/docker-compose.yml.j2
+    dest: "{{ compose_path }}"
+
+- name: Create ENV File
+  ansible.builtin.template:
+    src: templates/env.j2
+    dest: "{{ env_path }}"

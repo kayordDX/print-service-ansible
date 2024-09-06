@@ -1,0 +1,10 @@
+ruimsig:
+  hosts:
+    ruimsigPrint1:
+      ansible_host: ruimsigPrint1
+    ruimsigPrint2:
+      ansible_host: ruimsigPrint2
+current:
+  hosts:
+    ruimsigPrint1:
+      ansible_host: ruimsigPrint1
