@@ -1,0 +1,4 @@
+home_path: /etc/NetworkManager/system-connections/home.nmconnection
+phone_path: /etc/NetworkManager/system-connections/phone.nmconnection
+clearwater_path: /etc/NetworkManager/system-connections/clearwater.nmconnection
+ruimsig_path: /etc/NetworkManager/system-connections/ruimsig.nmconnection

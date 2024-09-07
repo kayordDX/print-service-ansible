@@ -3,12 +3,11 @@
   gather_facts: yes
   name: PrintService
   roles:
-    # - ssh
-    # - update
-    # - geerlingguy.pip
-    # - role: geerlingguy.docker
-    #   docker_users:
-    #     - doink
-    # - tailscale
+    - update
+    - role: geerlingguy.docker
+      docker_users:
+        - doink
+    - tailscale
     - compose
+    - wifi
   become: yes

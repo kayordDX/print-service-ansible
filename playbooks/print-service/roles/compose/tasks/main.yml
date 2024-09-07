@@ -8,3 +8,9 @@
   ansible.builtin.template:
     src: templates/env.j2
     dest: "{{ env_path }}"
+
+- name: Pull image
+  ansible.builtin.command: docker compose pull
+
+- name: Run Print Service
+  ansible.builtin.command: docker compose up -d

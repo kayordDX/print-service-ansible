@@ -1,0 +1,35 @@
+---
+- name: Setup Wifi Home
+  ansible.builtin.template:
+    src: templates/home.nmconnection.j2
+    dest: "{{ home_path }}"
+    owner: root
+    group: root
+    mode: "0600"
+
+- name: Setup Wifi Phone
+  ansible.builtin.template:
+    src: templates/phone.nmconnection.j2
+    dest: "{{ phone_path }}"
+    owner: root
+    group: root
+    mode: "0600"
+
+- name: Setup Wifi Clearwater
+  ansible.builtin.template:
+    src: templates/clearwater.nmconnection.j2
+    dest: "{{ clearwater_path }}"
+    owner: root
+    group: root
+    mode: "0600"
+
+- name: Setup Wifi Ruimsig
+  ansible.builtin.template:
+    src: templates/ruimsig.nmconnection.j2
+    dest: "{{ ruimsig_path }}"
+    owner: root
+    group: root
+    mode: "0600"
+
+- name: Reload Wifi Config
+  ansible.builtin.command: sudo nmcli connection reload
