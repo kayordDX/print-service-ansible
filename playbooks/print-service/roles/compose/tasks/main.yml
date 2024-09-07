@@ -3,11 +3,15 @@
   ansible.builtin.template:
     src: templates/docker-compose.yml.j2
     dest: "{{ compose_path }}"
+    owner: doink
+    group: doink
 
 - name: Create ENV File
   ansible.builtin.template:
     src: templates/env.j2
     dest: "{{ env_path }}"
+    owner: doink
+    group: doink
 
 - name: Pull image
   ansible.builtin.command: docker compose pull
