@@ -1,5 +1,5 @@
 ---
-- hosts: ruimsig
+- hosts: clearwater
   gather_facts: yes
   name: PrintService
   roles:

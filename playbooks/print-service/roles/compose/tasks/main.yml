@@ -1,4 +1,18 @@
 ---
+- name: Create print-service directory
+  ansible.builtin.file:
+    path: "{{ compose_dir }}"
+    state: directory
+    owner: doink
+    group: doink
+
+- name: Create Print Service Config
+  ansible.builtin.template:
+    src: templates/config.yml.j2
+    dest: "{{ config_path }}"
+    owner: doink
+    group: doink
+
 - name: Create Compose File
   ansible.builtin.template:
     src: templates/docker-compose.yml.j2
@@ -14,7 +28,11 @@
     group: doink
 
 - name: Pull image
-  ansible.builtin.command: docker compose pull
+  ansible.builtin.command:
+    chdir: "{{ compose_dir }}"
+    cmd: docker compose pull
 
 - name: Run Print Service
-  ansible.builtin.command: docker compose up -d
+  ansible.builtin.command:
+    chdir: "{{ compose_dir }}"
+    cmd: docker compose up -d

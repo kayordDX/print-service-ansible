@@ -3,10 +3,9 @@ services:
     image: ghcr.io/kayorddx/print-service:latest
     environment:
       ConnectionStrings:Redis: pos.kayord.com,password=${REDIS_PASSWORD},ssl=False,abortConnect=False
-      Printer:OutletId: {{outletId}}
-      Printer:PrinterId: {{printerId}}
-      Printer:Name: {{printerName}}
+      # Serilog__MinimumLevel: Debug
     volumes:
       - /dev/usb/:/dev/usb/
+      - ./config.yml:/app/config.yml
     restart: unless-stopped
     privileged: true

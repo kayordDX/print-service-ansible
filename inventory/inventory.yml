@@ -2,9 +2,12 @@ ruimsig:
   hosts:
     ruimsigPrint1:
       ansible_host: ruimsigPrint1
-    ruimsigPrint2:
-      ansible_host: ruimsigPrint2
+clearwater:
+  hosts:
+    clearwaterPrint1:
+      ansible_host: clearwaterPrint1
+
 current:
   hosts:
-    ruimsigPrint2:
-      ansible_host: ruimsigPrint2
+    clearwaterPrint1:
+      ansible_host: clearwaterPrint1

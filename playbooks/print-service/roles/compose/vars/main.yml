@@ -1,5 +1,7 @@
-compose_path: /home/doink/docker-compose.yml
-env_path: /home/doink/.env
-outletId: 2
-printerId: 201
-printerName: Printer 1
+compose_dir: /home/doink/print-service
+compose_path: "{{compose_dir}}/docker-compose.yml"
+env_path: "{{compose_dir}}/.env"
+config_path: "{{compose_dir}}/config.yml"
+outletId: 99
+printerId: 9901
+printerName: Printer 99
