@@ -6,8 +6,12 @@ clearwater:
   hosts:
     clearwaterPrint1:
       ansible_host: clearwaterPrint1
+biden:
+  hosts:
+    bidenPrint1:
+      ansible_host: bidenPrint1
 
 current:
   hosts:
-    clearwaterPrint1:
-      ansible_host: clearwaterPrint1
+    bidenPrint1:
+      ansible_host: bidenPrint1

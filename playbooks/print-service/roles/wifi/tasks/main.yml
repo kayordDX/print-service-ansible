@@ -31,5 +31,13 @@
     group: root
     mode: "0600"
 
+- name: Setup Wifi Biden
+  ansible.builtin.template:
+    src: templates/biden.nmconnection.j2
+    dest: "{{ biden_path }}"
+    owner: root
+    group: root
+    mode: "0600"
+
 - name: Reload Wifi Config
   ansible.builtin.command: sudo nmcli connection reload
