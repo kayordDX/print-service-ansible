@@ -10,8 +10,12 @@ biden:
   hosts:
     bidenPrint1:
       ansible_host: bidenPrint1
+presto:
+  hosts:
+    prestoPrint1:
+      ansible_host: prestoPrint1
 
 current:
   hosts:
-    bidenPrint1:
-      ansible_host: bidenPrint1
+    prestoPrint1:
+      ansible_host: prestoPrint1

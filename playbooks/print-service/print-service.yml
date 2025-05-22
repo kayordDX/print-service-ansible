@@ -1,5 +1,5 @@
 ---
-- hosts: biden
+- hosts: current
   gather_facts: yes
   name: PrintService
   roles:
