@@ -6,16 +6,9 @@
     owner: doink
     group: doink
 
-- name: Create Print Service Config
-  ansible.builtin.template:
-    src: templates/config.yml.j2
-    dest: "{{ config_path }}"
-    owner: doink
-    group: doink
-
 - name: Create Compose File
   ansible.builtin.template:
-    src: templates/docker-compose.yml.j2
+    src: templates/compose.yml.j2
     dest: "{{ compose_path }}"
     owner: doink
     group: doink
