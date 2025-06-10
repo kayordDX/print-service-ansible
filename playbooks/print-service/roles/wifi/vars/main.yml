@@ -3,4 +3,5 @@ phone_path: /etc/NetworkManager/system-connections/phone.nmconnection
 clearwater_path: /etc/NetworkManager/system-connections/clearwater.nmconnection
 ruimsig_path: /etc/NetworkManager/system-connections/ruimsig.nmconnection
 biden_path: /etc/NetworkManager/system-connections/biden.nmconnection
+cirqlar_path: /etc/NetworkManager/system-connections/cirqlar.nmconnection
 presto_path: /etc/NetworkManager/system-connections/presto.nmconnection

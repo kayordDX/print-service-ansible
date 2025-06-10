@@ -39,6 +39,14 @@
     group: root
     mode: "0600"
 
+- name: Setup Wifi Cirqlar
+  ansible.builtin.template:
+    src: templates/cirqlar.nmconnection.j2
+    dest: "{{ cirqlar_path }}"
+    owner: root
+    group: root
+    mode: "0600"
+
 - name: Setup Wifi Presto
   ansible.builtin.template:
     src: templates/presto.nmconnection.j2
