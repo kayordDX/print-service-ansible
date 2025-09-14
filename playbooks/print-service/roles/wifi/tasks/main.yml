@@ -55,5 +55,13 @@
     group: root
     mode: "0600"
 
+- name: Setup Wifi Presto New
+  ansible.builtin.template:
+    src: templates/prestonew.nmconnection.j2
+    dest: "{{ prestonew_path }}"
+    owner: root
+    group: root
+    mode: "0600"
+
 - name: Reload Wifi Config
   ansible.builtin.command: sudo nmcli connection reload
