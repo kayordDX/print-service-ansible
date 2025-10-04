@@ -2,20 +2,28 @@ ruimsig:
   hosts:
     ruimsigPrint1:
       ansible_host: ruimsigPrint1
+
 clearwater:
   hosts:
     clearwaterPrint1:
       ansible_host: clearwaterPrint1
+
 biden:
   hosts:
     bidenPrint1:
       ansible_host: bidenPrint1
+
 presto:
   hosts:
     prestoPrint1:
       ansible_host: prestoPrint1
 
+krookandkingHosts:
+  hosts:
+    krookandking:
+      ansible_host: krookandking
+
 current:
   hosts:
-    prestoPrint1:
-      ansible_host: prestoPrint1
+    krookandking:
+      ansible_host: krookandking
