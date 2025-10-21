@@ -7,3 +7,4 @@ cirqlar_path: /etc/NetworkManager/system-connections/cirqlar.nmconnection
 presto_path: /etc/NetworkManager/system-connections/presto.nmconnection
 prestonew_path: /etc/NetworkManager/system-connections/prestonew.nmconnection
 krookandking_path: /etc/NetworkManager/system-connections/krookandking.nmconnection
+grasslands_path: /etc/NetworkManager/system-connections/grasslands.nmconnection

@@ -23,7 +23,12 @@ krookandkingHosts:
     krookandking:
       ansible_host: krookandking
 
+grasslands:
+  hosts:
+    grasslandsprint:
+      ansible_host: grasslandsprint
+
 current:
   hosts:
-    krookandking:
-      ansible_host: krookandking
+    grasslandsprint:
+      ansible_host: grasslandsprint
