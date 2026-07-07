@@ -1,6 +1,9 @@
 [tools]
 python = "latest"
 uv = "latest"
+"pipx:ansible-core" = "latest"
+"pipx:ansible-navigator" = "latest"
 
 [env]
 _.python.venv = { path = ".venv", create = true }
+ANSIBLE_CONFIG = "{{ config_root }}/ansible.cfg"
