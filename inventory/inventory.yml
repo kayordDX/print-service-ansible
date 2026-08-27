@@ -30,5 +30,5 @@ grasslands:
 
 current:
   hosts:
-    grasslandsprint:
-      ansible_host: grasslandsprint
+    krookandking:
+      ansible_host: krookandking
